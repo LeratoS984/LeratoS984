@@ -353,3 +353,105 @@ body .shoot {
         font-size: 0.85rem;
     }
 }
+/* ================================================================
+   gallery.css
+   
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Roboto', system-ui, sans-serif;
+    background-color: #fcf9f5;
+    padding: 2rem 1.5rem;
+    color: #2f2c29;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 450;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: #4a423b;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+h1:after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 2px;
+    background: #cbc2b7;
+    margin: 0.5rem auto 0;
+}
+
+/* responsive grid: replaces float-based .responsive classes */
+.responsive {
+    display: inline-block;
+    width: 25%;
+    padding: 0.8rem;
+    vertical-align: top;
+}
+
+.gallery {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.04);
+    transition: all 0.2s;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery:hover img {
+    transform: scale(1.02);
+}
+
+/* clean responsive breakpoints */
+@media (max-width: 1024px) {
+    .responsive {
+        width: 33.33%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    .responsive {
+        width: 50%;
+        padding: 0.6rem;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .responsive {
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .gallery {
+        border-radius: 16px;
+    }
+    .gallery img {
+        aspect-ratio: 4 / 3;
+    }
+}
+
+/* subtle loading background for images */
+img {
+    background-color: #ede7e0;
+}
