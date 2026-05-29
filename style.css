@@ -196,3 +196,160 @@ nav ul li a:hover {
         padding: 1rem;
     }
 }
+
+   pricing.css
+
+
+
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Segoe UI', 'Roboto', system-ui, sans-serif;
+    background-color: #fefaf5;
+    color: #2d2a27;
+    padding: 2rem 1.5rem;
+}
+
+/* main section */
+.products {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.products h1 {
+    font-size: 2.3rem;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    color: #3b3530;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #e2d9d2;
+    display: inline-block;
+    width: auto;
+    padding-bottom: 0.6rem;
+}
+
+/* responsive card layout: all .shoot elements become flexible cards */
+.shoot {
+    background: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+    transition: transform 0.25s ease, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin: 1rem;
+}
+
+.shoot:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* images inside cards */
+.shoot img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    background-color: #ece6e0;
+}
+
+.shoot-info, .shoot > h4, .shoot > p, .shoot > a {
+    padding: 0 1rem;
+}
+
+.shoot-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #2e2b28;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.shoot-price {
+    font-size: 0.95rem;
+    color: #7b6e62;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}
+
+.shoot-btn, .shoot-btns {
+    background-color: #2b2b2b;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.7rem 1rem;
+    margin: 0 1rem 1.2rem 1rem;
+    border-radius: 40px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.shoot-btn:hover, .shoot-btns:hover {
+    background-color: #6f5e4e;
+}
+
+/* group all shoots into a responsive masonry-like grid */
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products .all-shoots,
+.products > .shoot,
+.products > div:not(.all-shoots) .shoot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.8rem;
+}
+
+/* ensure any stray shoots (graduation/outdoor/birthday) are also styled */
+.shoot {
+    flex: 0 0 auto;
+}
+
+/* force all .shoot elements to line up neatly */
+body .shoot {
+    margin: 0.8rem;
+}
+
+/* Extra wrapping: group existing shoots inside pricing container */
+@media (max-width: 780px) {
+    body {
+        padding: 1rem;
+    }
+    .products h1 {
+        font-size: 1.9rem;
+        text-align: center;
+        display: block;
+    }
+    .shoot {
+        width: 100%;
+        max-width: 360px;
+        margin: 1rem auto;
+    }
+    .shoot img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 500px) {
+    .shoot-title {
+        font-size: 1.2rem;
+    }
+    .shoot-price {
+        font-size: 0.85rem;
+    }
+}
