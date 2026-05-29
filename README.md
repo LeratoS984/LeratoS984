@@ -53,4 +53,5 @@ Home (index.html)
 
 Live Demo: Open `index.html` in browser.  
 Repository: https://github.com/LeratoS984/LeratoS984
-
+CSS IMPLEMENTATION 
+- Added css to all the html files
