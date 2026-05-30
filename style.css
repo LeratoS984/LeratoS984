@@ -397,6 +397,21 @@ h1:after {
     vertical-align: top;
 }
 
+/* make gallery rows align consistently */
+.gallery-grid {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* keep images aligned in the grid */
+.gallery-grid .responsive {
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+
+
 .gallery {
     background: #fff;
     border-radius: 18px;
@@ -454,4 +469,317 @@ h1:after {
 /* subtle loading background for images */
 img {
     background-color: #ede7e0;
+}
+/* ================================================================
+   about.css
+   About Page – Photography studio bio, experience & education.
+   Neutral, elegant, fully responsive flex layout.
+   ================================================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Roboto', system-ui, -apple-system, sans-serif;
+    background: #fefcf9;
+    color: #2e2b28;
+    line-height: 1.55;
+    padding: 2rem 1.5rem;
+}
+
+/* about us container */
+.about-us {
+    max-width: 1280px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 32px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 2rem 2.5rem;
+}
+
+/* image styling */
+.image-selection {
+    flex: 1;
+    min-width: 220px;
+    text-align: center;
+}
+
+.image-selection img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    border: 4px solid #f0eae2;
+}
+
+/* content section */
+.content-section {
+    flex: 2;
+    min-width: 260px;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #3c3530;
+    margin-bottom: 1rem;
+    letter-spacing: -0.3px;
+}
+
+.content-section p {
+    font-size: 1rem;
+    color: #4b4641;
+    margin-bottom: 1rem;
+    white-space: pre-line;
+}
+
+.content-section b {
+    font-weight: 600;
+    color: #6a5c50;
+}
+
+/* ensure line breaks and spacing */
+.content-section br {
+    margin-bottom: 0.4rem;
+}
+
+/* responsive */
+@media (max-width: 860px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.8rem;
+        gap: 1.8rem;
+    }
+    .content-section h2 {
+        font-size: 1.8rem;
+    }
+    .image-selection img {
+        max-width: 240px;
+    }
+}
+
+@media (max-width: 550px) {
+    body {
+        padding: 1rem;
+    }
+    .about-us {
+        border-radius: 24px;
+    }
+    .content-section p {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+    .container {
+        padding: 1.2rem;
+    }
+    .content-section h2 {
+        text-align: center;
+    }
+}
+/* ================================================================
+   contacts.css
+   Contact Page – Inquiry form & reach info.
+   Soothing neutral palette, full mobile responsiveness.
+   ================================================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Roboto', system-ui, sans-serif;
+    background-color: #faf8f5;
+    color: #332e2a;
+    padding: 2rem 1.2rem;
+}
+
+/* main container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 28px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.02);
+    padding: 2rem 2rem;
+}
+
+.container h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #423c36;
+    margin-bottom: 0.5rem;
+}
+
+.container > p {
+    color: #6d655d;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    max-width: 85%;
+}
+
+/* two column layout */
+.contact-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin-top: 1rem;
+}
+
+.contact-left {
+    flex: 2;
+    min-width: 260px;
+}
+
+.contact-right {
+    flex: 1.2;
+    min-width: 220px;
+    background: #fefaf5;
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+/* form styling */
+.contact-left h3, .contact-right h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #4e453e;
+    margin-bottom: 1.2rem;
+    border-left: 4px solid #c7bcaf;
+    padding-left: 0.75rem;
+}
+
+.input-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    flex: 1;
+    min-width: 160px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+    color: #5c534b;
+    font-size: 0.85rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #e3dcd5;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    background-color: #fff;
+    transition: 0.2s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #b7a48f;
+    box-shadow: 0 0 0 2px rgba(183, 164, 143, 0.2);
+}
+
+textarea {
+    resize: vertical;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+button[type="submit"] {
+    background-color: #2c2a28;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    width: auto;
+    min-width: 140px;
+}
+
+button[type="submit"]:hover {
+    background-color: #7f6b5b;
+}
+
+/* contact right info */
+.contact-right table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.contact-right td {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e7dfd8;
+    font-size: 0.95rem;
+}
+
+.contact-right td:first-child {
+    font-weight: 600;
+    color: #7f6d5d;
+    width: 35%;
+}
+
+.contact-right td:last-child {
+    color: #4d453e;
+}
+
+/* responsive */
+@media (max-width: 800px) {
+    .container {
+        padding: 1.5rem;
+    }
+    .contact-box {
+        flex-direction: column;
+    }
+    .contact-right {
+        text-align: left;
+    }
+    .container > p {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    body {
+        padding: 1rem;
+    }
+    .container h1 {
+        font-size: 1.8rem;
+    }
+    .input-row {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    button[type="submit"] {
+        width: 100%;
+    }
+    .contact-left h3, .contact-right h3 {
+        font-size: 1.3rem;
+    }
 }
