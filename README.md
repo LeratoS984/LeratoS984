@@ -151,7 +151,7 @@ References
 
 
 Live Demo
-- Visit the site here: `https://YourUsername.github.io/NJ-Studio/` [(yourusername.github.io in Bing)](https://www.bing.com/search?q="https%3A%2F%2Fyourusername.github.io%2FNJ-Studio%2F")  
+- view here: https://sprightly-sprinkles-a48486.netlify.app/
 - Repository: [https://github.com/LeratoS984/NJ-Studio](https://github.com/LeratoS984/NJ-Studio)  
 
 
