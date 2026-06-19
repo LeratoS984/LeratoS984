@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+ 
 <img width="1889" height="908" alt="home" src="https://github.com/user-attachments/assets/5e279572-2811-46e1-91cf-0384c2fa7577" /># NJ Studio Photography Website
 
 Student Information
